@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+       <!--配置User创建对象-->
+       <bean id="user" class="com.bert.spring5.User"></bean>
+
+
+       <!--基于xml的set方法注入属性-->
+       <bean id="book" class="com.bert.spring5.Book">
+              <property name="bname" value="易筋经"></property>
+              <property name="bauthour" value="达摩老祖"></property>
+       </bean>
+
+       <!--基于有参构造方法注入属性-->
+       <bean id="orders" class="com.bert.spring5.Orders">
+              <constructor-arg name="oname" value="电脑"></constructor-arg>
+              <constructor-arg name="oaddress" value="China"></constructor-arg>
+       </bean>
+</beans>

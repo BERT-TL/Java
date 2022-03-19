@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+       <!--级联赋值-->
+       <bean id="emp" class="com.bert.spring5.Bean.Emp">
+              <property name="dept" ref="dept" ></property>
+              <property name="name" value="张三"></property>
+              <property name="gender" value="男"></property>
+       </bean>
+
+       <bean id="dept" class="com.bert.spring5.Bean.Dept">
+              <property name="dept" value="安保部"></property>
+       </bean>
+
+
+
+</beans>
