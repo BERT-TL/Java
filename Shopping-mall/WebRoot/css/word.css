@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    
+    background-image: url("../images/bg_1.png");
+    background-repeat: repeat-y;
+
+    background-position: center;
+    background-position-y: -50px;
+    background-size: 1920px 750px;
+}
+/* 头部 */
+.head{
+    height: 10px;
+    margin-right: 170px;
+}
+.head a{
+    font-size: 12px;
+    float: right;
+    text-decoration: none;
+    color: rgb(23, 179, 57);
+    font-size: 12px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.head a:hover{
+    text-decoration-line: underline;
+}
+
+/* 留言 */
+.main{
+    width: 900px;
+    height: 400px;
+    border-radius: 10px;
+    border: 1px solid rgb(23, 179, 57);
+    margin: 35px auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.main .in_main{
+    width: 94%;
+    margin: 8px auto;
+}
+.main .title{
+    margin: 8px auto;
+    padding-bottom: 38px;
+    border-bottom: 2px solid rgb(23, 179, 57);
+}
+.main .title>a{
+    text-decoration: none;
+    color:rgb(23, 179, 57);
+    font-size: 22px;
+    font-weight: bold;
+    float: left;
+}
+.main .page{
+    float: right;
+    margin-top: 7px;
+}
+.main .page::after{
+    content:"";
+    clear: both;
+    display: block;
+}
+.main .page a{
+    color:rgb(23, 179, 57);
+    text-decoration: none;
+    margin-right: 8px;
+}
+
+/* 显示内容 */
+.main .word{
+    height: 150px;
+    border-bottom: 1px solid rgb(23, 179, 57);
+}
+.main .word .word_content,
+.main .word .return_word
+{
+    margin-left: 25px;
+}
+.main .word .userName{
+    color:rgb(23, 179, 57);
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: bold;   
+}
+.main .word .userName>a{
+    color:rgb(23, 179, 57);
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;   
+}
+.main .word .userName .arrow img{
+    width: 35px;
+    height: 28px;
+    cursor: pointer;
+}
+.main .word .userName ul{
+    list-style: none;
+    float: right;
+    text-align: center;
+}
+.main .word .userName ul .option{
+    float: right;
+    border: 1px solid rgb(23, 179, 57);
+    display: none;
+    border-radius: 8px;
+}
+.main .word .userName .arrow li{
+    height: 26px;
+    line-height: 26px;
+    width: 70px;
+}
+
+.main .word .userName .arrow .option a{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: normal;
+    color:rgb(23, 179, 57);
+}
+.main .word .content{
+    margin-top: 3px;
+    color:rgb(23, 179, 57);
+    font-size: 17px;
+}
+.main .word .return a{
+    color:rgb(23, 179, 57);
+    font-size: 13px;
+    text-decoration: none;
+    margin-left: 8px;
+}
+.main .word .content{
+    width: 100%;
+    height: 90px;
+}
+.main .word .return span,
+.main .word .return_word .time
+{
+    color: rgb(3, 145, 22);
+    font-size: 13px;
+}
+/* 回复框 */
+.main .word .return_word{
+    margin-top: 20px;
+    color: rgb(23, 179, 57);
+}
+.main .word .return_word p{
+    color:rgb(23, 179, 57);
+    font-size: 18px;
+    font-weight: bold;   
+}
+.main .word .return_word p a{
+    color:rgb(23, 179, 57);
+    font-size: 18px;
+    text-decoration: none;
+    margin-right: 15px;
+}
+.main .word .return_word p span{
+    font-weight: normal;
+    font-size: 16px;
+}
+.main .word .return_word .time{
+    margin-top: 2px;
+    
+}
+.main .word .return_word .time span{
+    margin-right: 5px;
+}
+.main .word .return_word>input{
+    width: 350px;
+    height: 26px;
+    border: 1px solid rgb(23, 179, 57);
+    margin-top: 4px;
+    color:  rgb(23, 179, 57);
+}
+.main .word .return_word>input:hover{
+    border: 2px solid rgb(23, 179, 57);
+}
+
+.main .word .return_word form .return_message{
+    width: 350px;
+    height: 50px;
+    border: 2px solid rgb(23, 179, 57);
+    margin-top: 4px;
+    color:  rgb(23, 179, 57);
+}
+.main .word .return_word form div{
+    margin-top: 3px;
+}
+.main .word .return_word form div input{
+    background-color:  rgb(160, 243, 178);
+    border: none;
+    padding: 3px 12px;
+    color: rgb(1, 121, 17);
+    font-weight: bold;
+    margin-right: 5px;
+}
+.main .word .return_word form div a{
+    color:rgb(23, 179, 57);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/* 底部页数 */
+.main .in_main .bottom_page{
+    position: relative;
+    border-top: 2px solid rgb(23, 179, 57);
+    bottom: -150px;
+}
+.main .in_main .bottom_page div{
+    margin-top: 8px;
+}
+.main .in_main .bottom_page a{
+    margin-right: 15px;
+    color: rgb(23, 179, 57);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* hover事件 */
+.main .word .userName .arrow:hover .option{
+    display: block;
+}
+.main .word .userName .arrow .option li:nth-of-type(1):hover{
+    background-color:  rgb(226, 255, 232);
+    border-radius: 8px 8px 0 0;
+}
+.main .word .userName .arrow .option li:nth-of-type(2):hover{
+    background-color:  rgb(226, 255, 232);
+    border-radius: 0 0 8px 8px ;
+}
+.main .title>a:hover,
+.main .word .userName>a:hover,
+.main .word .return_word p a:hover{
+    color: rgb(1, 121, 17);
+}
+.main .page a:hover,
+.main .word .return a:hover,
+.main .in_main .bottom_page a:hover,
+.main .word .return_word form div a:hover
+{
+    text-decoration-line: underline;
+}
+
+
+/* 回到顶部 */
+.nav_top{
+    color: rgb(4, 156, 37);
+    font-size: 18px;
+    width: 112px;
+    /* width: 35px; */
+    height: 35px;
+    line-height: 35px;
+    position: fixed;
+    right: 30px;
+    top: 500px;
+    /* background-image: url("../images/top.png");
+    background-size: 35px;
+    background-repeat: no-repeat;
+    text-align: right; */
+}
+.nav_top img{
+    width: 35px;
+    height: 35px;
+    float: left;
+    margin-right: 5px;
+}
+/* .top{
+    display: none;
+}
+img:hover+.top{
+    display: block;
+} */
+

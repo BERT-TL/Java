@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	
+  <filter>
+  	<filter-name>filter</filter-name>
+  	<filter-class>Filter.filter</filter-class>
+  </filter>
+  <filter>
+  	<filter-name>Login_filter</filter-name>
+  	<filter-class>Filter.Login_filter</filter-class>
+  </filter>
+   <!-- <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>filter</servlet-name>
+    <servlet-class>Filter.filter</servlet-class>
+  </servlet>  -->
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Connection</servlet-name>
+    <servlet-class>DAO.ConnectionPool</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>user_bean</servlet-name>
+    <servlet-class>JavaBean.user_bean</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>user_dao</servlet-name>
+    <servlet-class>DAO.user_dao</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Register</servlet-name>
+    <servlet-class>Servlet.Register</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>Servlet.Login</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>exit</servlet-name>
+    <servlet-class>Servlet.exit</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>alter_personal</servlet-name>
+    <servlet-class>Servlet.alter_personal</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>alter_password</servlet-name>
+    <servlet-class>Servlet.alter_password</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Goods_dao</servlet-name>
+    <servlet-class>DAO.Goods_dao</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Goods_bean</servlet-name>
+    <servlet-class>JavaBean.Goods_bean</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Goods</servlet-name>
+    <servlet-class>Servlet.Goods</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>sort</servlet-name>
+    <servlet-class>Servlet.sort</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Sort</servlet-name>
+    <servlet-class>Servlet.Sort</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Search</servlet-name>
+    <servlet-class>Servlet.Search</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>My_goods</servlet-name>
+    <servlet-class>DAO.My_goods</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Show_goods</servlet-name>
+    <servlet-class>Servlet.Show_goods</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Add_cart</servlet-name>
+    <servlet-class>Servlet.Add_cart</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>addCart</servlet-name>
+    <servlet-class>DAO.addCart</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Cart_bean</servlet-name>
+    <servlet-class>JavaBean.Cart_bean</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>delete_cart</servlet-name>
+    <servlet-class>Servlet.delete_cart</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Mygoods_bean</servlet-name>
+    <servlet-class>JavaBean.Mygoods_bean</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Mygoods</servlet-name>
+    <servlet-class>Servlet.Mygoods</servlet-class>
+  </servlet>
+  <!--<servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Login_filter</servlet-name>
+    <servlet-class>Filter.Login_filter</servlet-class>
+  </servlet>  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--<servlet-mapping>
+    <servlet-name>filter</servlet-name>
+    <url-pattern>/*</url-pattern>
+  </servlet-mapping>   -->
+  <servlet-mapping>
+    <servlet-name>Connection</servlet-name>
+    <url-pattern>/servlet/ConnectionPool</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>user_bean</servlet-name>
+    <url-pattern>/servlet/user_bean</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>user_dao</servlet-name>
+    <url-pattern>/servlet/user_dao</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Register</servlet-name>
+    <url-pattern>/Register</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>exit</servlet-name>
+    <url-pattern>/exit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>alter_personal</servlet-name>
+    <url-pattern>/alter_personal</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>alter_password</servlet-name>
+    <url-pattern>/alter_password</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Goods_dao</servlet-name>
+    <url-pattern>/servlet/Goods_dao</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Goods_bean</servlet-name>
+    <url-pattern>/servlet/Goods_bean</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Goods</servlet-name>
+    <url-pattern>/Goods</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Sort</servlet-name>
+    <url-pattern>/Sort</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Search</servlet-name>
+    <url-pattern>/Search</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>My_goods</servlet-name>
+    <url-pattern>/servlet/My_goods</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Show_goods</servlet-name>
+    <url-pattern>/servlet/Show_goods</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Add_cart</servlet-name>
+    <url-pattern>/Add_cart</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>addCart</servlet-name>
+    <url-pattern>/servlet/addCart</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Cart_bean</servlet-name>
+    <url-pattern>/servlet/Cart_bean</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>delete_cart</servlet-name>
+    <url-pattern>/delete_cart</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Mygoods_bean</servlet-name>
+    <url-pattern>/servlet/Mygoods_bean</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Mygoods</servlet-name>
+    <url-pattern>/Mygoods</url-pattern>
+  </servlet-mapping>
+  <!--  <servlet-mapping>
+    <servlet-name>Login_filter</servlet-name>
+    <url-pattern>/servlet/Login_filter</url-pattern>
+  </servlet-mapping>-->
+
+
+  
+  <filter-mapping>
+  	<filter-name>filter</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <!-- <filter-mapping>
+  	<filter-name>Login_filter</filter-name>
+  	<url-pattern>*.jsp</url-pattern>
+  </filter-mapping> -->
+  
+  <welcome-file-list>
+    <welcome-file>Login_frame.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

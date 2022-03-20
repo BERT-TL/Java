@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.contain{
+    width: 97%;
+    height: 385px;
+	border-radius: 10px;
+	border: 1px rgb(41, 228, 82) solid;
+    background-color: rgb(246, 255, 248);
+    padding-bottom: 18px;
+    margin-top: 10px;
+    margin-left: 0px;
+}
+h2{
+    width: 100%;
+    height: 35px;
+    border-radius: 10px 10px 0 0;
+    background-color: rgb(138, 226, 157);
+    text-align: center;
+    color:  rgb(1, 121, 17);
+}
+.table{
+    border: 1px solid rgb(41, 228, 82);
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    border-left: none;
+    border-right: none;
+    border-spacing: 0px;
+    color:  rgb(23, 179, 57);
+}
+thead{
+    background-color: rgb(196, 252, 208);
+}
+thead tr{
+    height: 35px;
+    font-size: 18px;
+}
+tr{
+    height: 30px;
+}
+td{
+    border-top: 1px solid rgb(41, 228, 82);
+    margin: 3px 0;
+}
+a{
+    color:  rgb(23, 179, 57);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 2px 5px;
+    border-radius: 5px;
+    background-color: rgb(193, 253, 206);
+    font-size: 14px;
+}
+.button{
+    padding-top: 2px;
+    position: fixed;
+    bottom: 10px;
+    left: 370px;
+}
+a:hover{
+    color:  rgb(1, 121, 17);
+}

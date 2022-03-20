@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.f_hr{
+    height: 2px;
+    width: 80%;
+    margin: 0px auto;
+	background-color: rgb(23, 179, 57);
+	margin: 70px 0 20px 0;
+    clear: both;
+    margin: 1px auto;
+}
+.f_bottom{
+	text-align: center;
+	font-size: 8px;
+	margin-top: 6px;
+	color: rgb(14, 175, 49);
+}
+.f_bottom a{
+    color: rgb(14, 175, 49);
+    text-decoration: none;
+}
+.f_bottom a:hover{
+    text-decoration-line: underline;
+}
+.f_b_bottom{
+	margin-top: -1px;
+}
+

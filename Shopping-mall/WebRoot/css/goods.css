@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 900px;
+    height: 450px;
+    border: 1px solid rgb(23, 179, 57) ;
+    margin: 10px auto;
+    border-radius: 10px;
+    background-color: rgb(246, 255, 248);
+}
+
+h2{
+    margin-top: 15px;
+    text-align: center;
+    color:  rgb(24, 226, 68);
+}
+.alert{
+    color: rgb(14, 219, 59);
+    text-align: center;
+    font-size: 13px;
+}
+.type_all,
+.type_pri{
+    width: 270px;
+    height: 30px;
+    padding: 1px 10px;
+    outline: 0;
+    border: 1px solid rgb(24, 226, 68);
+    background-color: rgb(238, 255, 241);
+}
+ul{
+    list-style: none;
+}
+li{
+    width: 390px;
+    height: 50px;
+    margin-bottom: 8px;
+}
+input{
+    width: 270px;
+    height: 28px;
+    padding: 1px 12px;
+    outline: 0;
+    border: 1px solid rgb(24, 226, 68);
+    background-color: rgb(238, 255, 241); 
+}
+li div{
+    color: rgb(24, 226, 68);
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    width: 100px;
+    text-align: right;
+}
+li div span{
+    color: rgb(24, 226, 68);
+}
+.register{
+    margin: 20px 230px;
+}
+.inp{
+    text-align: center;
+}
+.inp input{
+    width: 100px;
+    height: 36px;
+    outline: 0;
+    margin-top: 6px;
+    margin-left: 20px;
+    background-color: rgb(24, 226, 68);
+    font-weight: bold;
+    font-size: 18px;
+    border: 0;
+}
+li>span{
+    color: red;
+    margin-left: 5px;
+    font-size: 11px;
+}

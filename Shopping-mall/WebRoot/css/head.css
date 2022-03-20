@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 70px;
+}
+img{
+    width: 100%;
+    height: 100%;
+    float: left;
+   
+}
+.head{
+    float: right;
+    font-size: 12px;
+    margin-right: 33px;
+    margin-top: -24px;
+}
+.head div{
+    float: left;
+    margin-left: 10px;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+a:hover{
+    color: rgb(23, 179, 57);
+}
+.cart{
+    float: left;
+}
+.cart img{
+    width: 17px;
+    height: 17px;
+}
+.userName{
+    color: rgb(25, 179, 57);
+}
