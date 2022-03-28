@@ -1,15 +1,18 @@
 package com.bert.boot.controller;
 
 import com.bert.boot.bean.Car;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 //@ResponseBody
 //@Controller
 
+@Slf4j
 @RestController
 public class helloController {
 
@@ -21,8 +24,10 @@ public class helloController {
         return car;
     }
 
-    @RequestMapping("/hello")
-    public String test() {
-        return "hello Spring Boot 2!";
+    @RequestMapping("/hello1")
+    public String test(@RequestParam("name") String name) {
+
+        log.info("请求进来了......");
+        return "hello Spring Boot 2!" + "您好：" + name;
     }
 }

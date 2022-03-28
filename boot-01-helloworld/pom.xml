@@ -24,6 +24,19 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId> <!-- get、set方法，ToString、有参无参构造的注解式开发 -->
+            <version>1.18.22</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>   <!-- 重加载程序 -->
+            <optional>true</optional>
+        </dependency>
+
     </dependencies>
 
     <build>
